@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Thicuoiky.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/Thicuoiky.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+       <table>
+            <tr class="row-1">
+                 <td>
+                     <img src="images/cong-thuong11.jpg" />
+                         </td>
+                <td > 
+                     <p class="larage">Trường Cao Đẳng <br > Công Thương Việt Nam <br /> </p>  
+                    
+               
+                    <p class="small" style="color:blue">"Đào Tạo Những Gì Doanh Nghệp Cần"</p>
+                    </td>
+
+            </tr>
+            <tr class="row-2">
+
+                  <td class="row-2-col-1">
+      <div>
+          <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/dangkythongtin.aspx">Đăng ký thông tin</asp:HyperLink>
+      </div>
+       <div>
+           <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/capnhattruonghoc.aspx">Cập nhật trường học</asp:HyperLink>
+      </div>
+  </td>
+                              
+                <td class="row-2-col-2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr class="row-3">
+               <td colspan="3">
+                     <p>Họ và tên sinh viên: Lê Quốc Hưng &emsp; 
+                        MSSV:2004CQ27018sp;&emsp;   
+                        Lớp:CCN04.5A&emsp;<br>
+                        Đề thi số: 01 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+                        Số báo danh: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   </p>
+                </td>
+                
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
